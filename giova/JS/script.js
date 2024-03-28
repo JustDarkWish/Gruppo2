@@ -11,8 +11,8 @@ btnInserisci.addEventListener("click",function () {
     if (data.value.trim()==""||task.value.trim()=="") {
         alert("inserisci le cose correttamente!")
     }else{
-        
-        listaTask.innerHTML=`<li>${task.value} ${data.value}</li>`;
+        listaTask.innerHTML+=`<li>${task.value} ${data.value}</li>`;
+        document.createElement("check","checkbox");
         task.value="";
 
     }
