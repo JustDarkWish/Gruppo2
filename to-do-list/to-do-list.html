@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="./css/to-do-list.css">
+</head>
+<body>
+    
+<section id="containerMain">    
+
+    <div id="formContainer">
+        <h2>Inserisci una task</h2>
+        <label>Item:</label>
+        <input type="text" placeholder="Inserisci la task" id="task">
+        <div id="feedItem"></div>  
+
+        <label>Data:</label>
+        <input type="date" id="date"> <br>
+        <div id="feedDate"></div>
+
+        <button id="btnInserisci">Inserisci</button>
+    </div>
+
+    <div id="todoContainer">
+        <h2>To-Do List</h2>
+        <ul id="listaTask"></ul>
+        <div id="demo"></div>
+        <button id="btnModifica"></button>
+        <button id="btnCancella"></button>
+    </div>
+</section>
+
+    <hr>
+    
+    <div id="feed"></div>
+
+
+
+
+    <script src="./js/to-do-list.js"></script>
+</body>
+</html>
