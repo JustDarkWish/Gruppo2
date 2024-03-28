@@ -7,7 +7,7 @@ body {
 }
 
 #containerMain {
-    border: solid 3px cyan;
+    border: solid 1px cyan;
     display: flex;
     flex-direction: row;
     max-width: 70%;
@@ -21,4 +21,10 @@ body {
 
 #todoContainer {
     width: 50%;
+}
+
+#btnInserisci{
+    border-bottom: 5px solid;
+    padding: 10px;
+    margin: 10px;
 }
