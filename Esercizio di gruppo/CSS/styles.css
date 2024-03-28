@@ -7,9 +7,12 @@ body {
 }
 
 #containerMain {
+    border: solid 3px cyan;
     display: flex;
     flex-direction: row;
-    padding: 75px;
+    max-width: 70%;
+    margin: auto;
+    padding: 2.5rem 0 2.5rem 0;
 }
 
 #formContainer {
