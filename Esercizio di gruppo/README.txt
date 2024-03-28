@@ -15,4 +15,4 @@ Opzionale: utilizzare icone per i bottoni e animazioni per l'aggiunta e la rimoz
 
     - Animazione: https://anime.style/
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer"/>
