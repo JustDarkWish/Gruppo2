@@ -18,8 +18,8 @@ function inserisciTask() {
         return;
     }
     
-    let checkbox=document.createElement("input");
-    let edit=document.createElement("input");
+    let checkbox = document.createElement("input");
+    let edit = document.createElement("input");
     let deleteDelete=document.createElement("input");
     let li = document.createElement('li');
     checkbox.setAttribute("type","checkbox")
@@ -31,8 +31,23 @@ function inserisciTask() {
     li.appendChild(document.createTextNode(taskValue + " - " + dataValue));
     
     li.appendChild(edit);
+    edit.value = "Modifica";
+
     li.appendChild(deleteDelete);
-    
+    deleteDelete.value = "Elimina";
+
+    function elimina() {
+        li.parentNode.removeChild(li);
+    }
+
+    deleteDelete.addEventListener("click", elimina);
+
+    function modifica() {
+        elimina();
+
+        task.value = taskValue;
+        data.value = dataValue;
+    }
 
     listaTask.appendChild(li);
     task.value = '';
