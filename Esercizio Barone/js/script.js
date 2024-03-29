@@ -36,14 +36,36 @@ function inserisciTask() {
     deleteDelete.setAttribute("type","button");
     edit.setAttribute("type","button");
     li.classList.add("#taskine");
-    // li.textContent = taskValue + ' - ' + dataValue;
-
+    
+    
+    
     li.appendChild(checkbox);
     li.appendChild(document.createTextNode(taskValue + " - " + dataValue));
     
+    
     li.appendChild(edit);
+    edit.value="edita";
+    deleteDelete.value="elimina";
     li.appendChild(deleteDelete);
     
+    
+    
+    function elimina() {
+        li.parentNode.removeChild(li);
+
+    }
+
+    deleteDelete.addEventListener("click",elimina);
+
+    function modifica() {
+        elimina();
+        task.value=taskValue;
+        data.value=dataValue;
+
+
+    }
+
+    edit.addEventListener("click",modifica);
 
     listaTask.appendChild(li);
     task.value = '';
