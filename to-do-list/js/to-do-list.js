@@ -10,7 +10,7 @@ let task = document.querySelector("#task");
 let date = document.querySelector("#date");
 let feed = document.querySelector("#feed");
 
-let btnInserisci = document.querySelector("btnInserisci");
+let btnInserisci = document.querySelector("#btnInserisci");
 let btnModifica = document.querySelector("#btnModifica");
 let btnCancella = document.querySelector("#btnCancella");
 
