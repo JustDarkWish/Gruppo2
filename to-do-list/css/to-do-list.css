@@ -8,14 +8,14 @@ body{
     color: white;
 }
 
-#containerMain{
+#containerMain, #feed{
     display: flex;
     flex-direction: row;
     margin: auto; 
     max-width: 70%; 
     padding: 2.5rem 0rem;
-    border: solid 0.5rem cyan;
 }
+
 
 #formContainer{
     width: 50%;

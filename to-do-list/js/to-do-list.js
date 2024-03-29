@@ -14,42 +14,37 @@ let btnInserisci = document.querySelector("#btnInserisci");
 let btnModifica = document.querySelector("#btnModifica");
 let btnCancella = document.querySelector("#btnCancella");
 
-let lisTask = document.querySelectorAll("ul#listaTask"); //restituisce una Nodelist
+// let lisTask = document.querySelectorAll("ul#listaTask"); //restituisce una Nodelist
 
 
 let listaTask = []; 
 
 class Task{
-    constructor(nome, data){
+    constructor(nome, date){
         this.nome = nome;
-        this.data = data;
+        this.date = date;
     }
 
     stampaTask(){
-        let descrizioneTask = `<span>${this.nome} </span> <span> ${this.data} </span>`;
+        let descrizioneTask = `<span>${this.nome} </span> <span> ${this.date} </span>`;
         return descrizioneTask; 
-    }
-
-    aggiungiTask(task){
-        this.listaTask.push(task); 
-    }
-    
-
+    } 
 }
 
 function recuperaTask(){
     let erroreRecuperaTask = ""; //preparo variabile errore
-    if(task.value.trim() != "" && data.value.trim() != ""){
-        miaTask = new Task (task.value, data.value);
-        listaTask.aggiungiTask(miaTask); 
+    if(task.value.trim() != "" && date.value.trim() != ""){
+        miaTask = new Task (task.value, date.value);
+        listaTask.push(miaTask); //inserisco nell'array di task
     }else {
-        erroreUtente = `<p> Non hai compilato correttamente i form </p>`
+        erroreRecuperaTask = `<p> Non hai compilato correttamente i form </p>`
     }
     //resetto campi di input:
     task.value = "";
-    data.value = ""; 
+    date.value = ""; 
     return erroreRecuperaTask;
 }
+
 
 function caricaTask(){
     let erroreUtenteMessaggio = recuperaTask();
@@ -63,14 +58,24 @@ function caricaTask(){
 
 function stampaListaTask(){
     demo.innerHTML = "";
-    if(miaTask.length == 0){ //lunghezza stringa 0
+    if(listaTask.length == 0){ //lunghezza stringa 0
         feedItem.innerHTML = `<p> Non hai scritto la task </p>`; 
     }else{
-        miaTask.listaTask.forEach(task =>{
-            listaTask += `<li> ${task.stampaTask()} </li>`
+        listaTask.forEach(task =>{
+            demo.innerHTML += `<li> ${task.stampaTask()} </li>`
         })
     }
 }
 
 btnInserisci.addEventListener('click', caricaTask);
 
+//dalla nodeList di listaTask
+[...listaTask].forEach(task => {
+    task.addEventListener("click", function(){ //metodo che quando clicco leva e mette sottolineature 
+        if(task.classList.contains('underline')){
+            task.classList.remove('underline');
+        }else {
+            task.classList.add('underline'); 
+        }
+    })
+})
