@@ -63,10 +63,11 @@ function stampaListaTask(){
     }else{
         listaTask.forEach(task =>{
             demo.innerHTML += `<li> ${task.stampaTask()} <button class="btnEdit">Modifica</button> 
-                                    <button class="btnDelete">Cancella</button> </li>`;
+                                                        <button class="btnDelete">Cancella</button> </li>`;
         })
     }
 }
+
 
 btnInserisci.addEventListener('click', caricaTask);
 
