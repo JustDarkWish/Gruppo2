@@ -11,8 +11,8 @@ let date = document.querySelector("#date");
 let feed = document.querySelector("#feed");
 
 let btnInserisci = document.querySelector("#btnInserisci");
-let btnModifica = document.querySelector("#btnModifica");
-let btnCancella = document.querySelector("#btnCancella");
+let btnModifica = document.querySelector("#btnEdit");
+let btnCancella = document.querySelector("#btnDelete");
 
 // let lisTask = document.querySelectorAll("ul#listaTask"); //restituisce una Nodelist
 

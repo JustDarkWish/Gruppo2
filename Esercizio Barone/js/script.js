@@ -27,9 +27,13 @@ function inserisciTask() {
         alert('Per favore, inserisci sia la task che la data.');
         return;
     }
-
+    let checkbox=document.createElement("input");
     let li = document.createElement('li');
+    checkbox.setAttribute("type","checkbox");
+    li.classList.add("#taskine");
     li.textContent = taskValue + ' - ' + dataValue;
+    li.firstChild(checkbox);
+    
 
     listaTask.appendChild(li);
     task.value = '';
