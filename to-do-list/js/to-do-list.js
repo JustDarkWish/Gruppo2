@@ -62,7 +62,8 @@ function stampaListaTask(){
         feedItem.innerHTML = `<p> Non hai scritto la task </p>`; 
     }else{
         listaTask.forEach(task =>{
-            demo.innerHTML += `<li> ${task.stampaTask()} </li>`
+            demo.innerHTML += `<li> ${task.stampaTask()} <button class="btnEdit">Modifica</button> 
+                                    <button class="btnDelete">Cancella</button> </li>`;
         })
     }
 }
