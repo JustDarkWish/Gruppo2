@@ -25,7 +25,9 @@ function inserisciTask() {
     checkbox.setAttribute("type","checkbox")
     deleteDelete.setAttribute("type","button");
     edit.setAttribute("type","button");
-    li.classList.add("#taskine");
+    // li.classList.add("#taskine");
+
+    li.setAttribute("class", "animate__animated animate__backInLeft");
 
     li.appendChild(checkbox);
     li.appendChild(document.createTextNode(taskValue + " - " + dataValue));
@@ -37,7 +39,11 @@ function inserisciTask() {
     deleteDelete.innerHTML = `<i class="fa-solid fa-trash"></i>`;
 
     function elimina() {
-        li.parentNode.removeChild(li);
+        li.classList.add("animate__backOutRight");
+
+        li.addEventListener('animationend', () => {
+            li.parentNode.removeChild(li);
+          });
     }
 
     deleteDelete.addEventListener("click", elimina);

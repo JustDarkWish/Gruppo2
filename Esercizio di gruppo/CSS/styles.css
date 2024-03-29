@@ -17,6 +17,7 @@ body {
     max-width: 70%;
     margin: auto;
     padding: 2.5rem;
+    overflow: hidden;
 }
 
 #formContainer {
@@ -35,4 +36,11 @@ body {
 
 .bottoneEditato {
     border-radius: 0.6rem;
+    padding: 0px;
+
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
