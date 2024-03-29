@@ -26,7 +26,6 @@ function inserisciTask() {
     deleteDelete.setAttribute("type","button");
     edit.setAttribute("type","button");
     li.classList.add("#taskine");
-    // li.textContent = taskValue + ' - ' + dataValue;
 
     li.appendChild(checkbox);
     li.appendChild(document.createTextNode(taskValue + " - " + dataValue));
