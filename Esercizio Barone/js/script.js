@@ -27,12 +27,22 @@ function inserisciTask() {
         alert('Per favore, inserisci sia la task che la data.');
         return;
     }
+    
     let checkbox=document.createElement("input");
+    let edit=document.createElement("input");
+    let deleteDelete=document.createElement("input");
     let li = document.createElement('li');
-    checkbox.setAttribute("type","checkbox");
+    checkbox.setAttribute("type","checkbox")
+    deleteDelete.setAttribute("type","button");
+    edit.setAttribute("type","button");
     li.classList.add("#taskine");
-    li.textContent = taskValue + ' - ' + dataValue;
-    li.firstChild(checkbox);
+    // li.textContent = taskValue + ' - ' + dataValue;
+
+    li.appendChild(checkbox);
+    li.appendChild(document.createTextNode(taskValue + " - " + dataValue));
+    
+    li.appendChild(edit);
+    li.appendChild(deleteDelete);
     
 
     listaTask.appendChild(li);
@@ -42,4 +52,6 @@ function inserisciTask() {
 }
 
 btnInserisci.addEventListener('click', inserisciTask);
+
+
 
