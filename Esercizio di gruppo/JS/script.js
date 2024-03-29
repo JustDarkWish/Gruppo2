@@ -47,7 +47,7 @@ function inserisciTask() {
     }
 
     deleteDelete.addEventListener("click", elimina);
-
+    
     function modifica() {
         elimina();
 
