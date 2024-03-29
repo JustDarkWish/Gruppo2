@@ -33,7 +33,7 @@ let btnInserisci = document.querySelector("#btnInserisci");
 let btnModifica = document.querySelector("#btnModifica");
 let btnCancella = document.querySelector("#btnCancella");
 
-// let lisTask = document.querySelectorAll("ul#listaTask"); //restituisce una Nodelist
+// let listaTask = document.querySelectorAll("ul#listaTask"); restituisce una Nodelist
 
 
 let listaTask = []; 
