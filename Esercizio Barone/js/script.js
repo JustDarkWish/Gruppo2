@@ -29,8 +29,8 @@ function inserisciTask() {
     }
     
     let checkbox=document.createElement("input");
-    let edit=document.createElement("input");
-    let deleteDelete=document.createElement("input");
+    let edit=document.createElement("button");
+    let deleteDelete=document.createElement("button");
     let li = document.createElement('li');
     checkbox.setAttribute("type","checkbox")
     deleteDelete.setAttribute("type","button");
@@ -44,8 +44,8 @@ function inserisciTask() {
     
     
     li.appendChild(edit);
-    edit.value="edita";
-    deleteDelete.value="elimina";
+    edit.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`;
+    deleteDelete.innerHTML=`<i class="fa-solid fa-trash"></i>`;
     li.appendChild(deleteDelete);
     
     
