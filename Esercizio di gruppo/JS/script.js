@@ -25,7 +25,17 @@ function inserisciTask() {
     checkbox.setAttribute("type","checkbox")
     deleteDelete.setAttribute("type","button");
     edit.setAttribute("type","button");
-    // li.classList.add("#taskine");
+
+    function crossout() {
+        if (this.checked) {
+            this.parentNode.style.textDecoration = "line-through";
+        } else {
+            this.parentNode.style.textDecoration = "none";
+        }
+    }
+    
+    checkbox.addEventListener("click", crossout);
+    
 
     li.setAttribute("class", "animate__animated animate__backInLeft");
 
@@ -55,11 +65,13 @@ function inserisciTask() {
         data.value = dataValue;
     }
 
-    edit.addEventListener("click",modifica);
+    edit.addEventListener("click", modifica);
     
     listaTask.appendChild(li);
     task.value = '';
     data.value = '';
+
+    checkbox.addEventListener("click", crossout);
 
 }
 

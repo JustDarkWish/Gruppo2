@@ -12,6 +12,7 @@ body {
 
 #containerMain {
     border: solid 1px blanchedalmond;
+    border-radius: 1rem;
     display: flex;
     flex-direction: row;
     max-width: 70%;
