@@ -55,6 +55,14 @@ function inserisciTask() {
   }
   checkbox.addEventListener("click",crossout);
 
+  // btnInserisci.addEventListener("blur", function () {
+  //   if (task.value.trim() == "") {
+  //     feedItem.innerHTML = `<p class="feed animate__animated animate__headShake"> Inserisci un nome per la tua task </p>`;
+  //   } else {
+  //     feedItem.innerHTML = "";
+  //   }
+  // });
+
   li.appendChild(edit);
   edit.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`;
   deleteDelete.innerHTML = `<i class="fa-solid fa-trash"></i>`;

@@ -29,6 +29,12 @@ body {
    max-height: 100%;
    display: flex;
    flex-direction: column;
+   font-size: large;
+}
+#feedItem{
+    margin: 10px;
+    color: aliceblue;
+    
 }
 
 #todoContainer {

@@ -84,7 +84,7 @@ function inserisciTask() {
 
 btnInserisci.addEventListener('click', inserisciTask);
 
-task.addEventListener("blur", function(){
+btnInserisci.addEventListener("blur", function(){
     if(task.value.trim() == ''){
         feedItem.innerHTML = `<p class="feed animate__animated animate__headShake"> Inserisci un nome per la tua task </p>`;
     }else{
