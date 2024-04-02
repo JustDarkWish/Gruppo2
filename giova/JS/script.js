@@ -38,9 +38,21 @@ function inserisciTask() {
   deleteDelete.setAttribute("type", "button");
   edit.setAttribute("type", "button");
   li.setAttribute("class","animate__animated animate__backInLeft");
-
+  
   li.appendChild(checkbox);
   li.appendChild(document.createTextNode(taskValue + " - " + dataValue));
+  
+  function crossout() {
+    if (this.checked) {
+      this.parentNode.style.textDecoration = "line-through";
+      li.setAttribute("class", "animate__animated animate__headShake");
+      li.classList("animate__headShake");
+      
+    } else {
+      this.parentNode.style.textDecoration = "none";
+    }
+  }
+  checkbox.addEventListener("click",crossout);
 
   li.appendChild(edit);
   edit.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`;
