@@ -44,12 +44,13 @@ function inserisciTask() {
   
   function crossout() {
     if (this.checked) {
-      this.parentNode.style.textDecoration = "line-through";
-      li.setAttribute("class", "animate__animated animate__headShake");
-      li.classList("animate__headShake");
+        this.parentNode.style.textDecoration = "line-through";
+        li.setAttribute("class", "animate__animated animate__headShake");
+        li.classList("animate__headShake");
       
     } else {
       this.parentNode.style.textDecoration = "none";
+      this.parentNode.classList.toggle("animate__headShake");
     }
   }
   checkbox.addEventListener("click",crossout);
