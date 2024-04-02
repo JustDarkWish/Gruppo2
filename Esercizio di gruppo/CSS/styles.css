@@ -21,6 +21,19 @@ body {
     overflow: hidden;
 }
 
+.taskInput {
+    width: 300px;
+    padding: 6px;
+    border-radius: 0.3rem;
+    margin-bottom: 12px;
+}
+
+.dataInput {
+    width: 300px;
+    padding: 6px;
+    border-radius: 0.3rem;
+}
+
 #formContainer {
     width: 50%;
 }
@@ -29,15 +42,24 @@ body {
     width: 50%;
 }
 
-#btnInserisci{
-    border-bottom: 5px solid;
-    padding: 10px;
-    margin: 10px;
+button {
+    background-color: #04AA6D;
+    /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 7.5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 1rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
-.bottoneEditato {
-    padding: 0;
-    border-radius: 0.6rem;
+button:hover {
+    background-color: rgb(168, 138, 91);
 }
 
 ul {
@@ -46,5 +68,5 @@ ul {
 }
 
 .feed{
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
