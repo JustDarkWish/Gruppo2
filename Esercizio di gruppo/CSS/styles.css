@@ -7,15 +7,18 @@
 body {
     background-color: rgb(30, 31, 31);
     font-family: "Poppins", sans-serif;
+    color: blanchedalmond;
 }
 
 #containerMain {
-    border: solid 1px cyan;
+    border: solid 1px blanchedalmond;
+    border-radius: 1rem;
     display: flex;
     flex-direction: row;
     max-width: 70%;
     margin: auto;
-    padding: 2.5rem 0 2.5rem 0;
+    padding: 2.5rem;
+    overflow: hidden;
 }
 
 #formContainer {
@@ -30,4 +33,18 @@ body {
     border-bottom: 5px solid;
     padding: 10px;
     margin: 10px;
+}
+
+.bottoneEditato {
+    padding: 0;
+    border-radius: 0.6rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.feed{
+    font-size: 0.5rem;
 }

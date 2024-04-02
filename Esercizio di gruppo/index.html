@@ -17,27 +17,29 @@
     <section id="containerMain">
 
         <div id="formContainer">
-            <h2>Inserisci una task</h2>
-            <label>Item:</label>
+            <h2 class="animate__animated animate__backInDown">Inserisci una task</h2>
+            <label>Task:</label>
             <input type="text" placeholder="Inserisci la task" id="task">
             <div id="feedItem"></div>
     
             <label>Data:</label>
-            <input type="date" id="data">
+            <input type="date" id="data" max="9999-12-31">
             <div id="feedDate"></div>
             <br>
     
-            <button id="btnInserisci">Inserisci</button>
+            <button id="btnInserisci" class="bottoneEditato">Inserisci</button>
+            <div id="feed" class="feed"></div>
         </div>
     
         <div id="todoContainer">
-            <h2>To-Do List</h2>
+            <h2 class="animate__animated animate__backInDown">To-Do List</h2>
             <ul id="listaTask"></ul>
             <div id="demo"></div>
         </div>
     
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script src="./JS/script.js"></script>
 </body>
 
