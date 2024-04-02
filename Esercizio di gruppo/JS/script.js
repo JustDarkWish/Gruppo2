@@ -30,6 +30,9 @@ function inserisciTask() {
     deleteDelete.setAttribute("type","button");
     edit.setAttribute("type","button");
 
+    edit.setAttribute("class", "btnEditModificato");
+    deleteDelete.setAttribute("class", "btnDeleteModificato");
+
     function crossout() {
         if (this.checked) {
             this.parentNode.style.textDecoration = "line-through";
